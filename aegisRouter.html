@@ -344,12 +344,19 @@
         statusPct.textContent = "100%";
         progressFill.style.width = "100%";
 
+        const sessOpts = { graphOptimizationLevel: "basic" };
         try {
           if (!navigator.gpu) throw new Error("No WebGPU");
-          session = await ort.InferenceSession.create(modelBytes, { executionProviders: ["webgpu"] });
+          session = await ort.InferenceSession.create(modelBytes, {
+            ...sessOpts,
+            executionProviders: ["webgpu"],
+          });
           activeProvider = "WebGPU";
         } catch {
-          session = await ort.InferenceSession.create(modelBytes, { executionProviders: ["wasm"] });
+          session = await ort.InferenceSession.create(modelBytes, {
+            ...sessOpts,
+            executionProviders: ["wasm"],
+          });
           activeProvider = "WASM (CPU)";
         }
 
