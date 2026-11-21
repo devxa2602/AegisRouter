@@ -1,4 +1,3 @@
-```markdown
 # Aegis Router v1
 
 **Sub-6ms, zero-egress LLM routing, prompt-injection defense, and tool dispatch in a single forward pass.**
