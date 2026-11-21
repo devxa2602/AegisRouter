@@ -6,7 +6,7 @@
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-Weights-yellow.svg)](https://huggingface.co/AkshaXA/aegis-router-v1)
 [![Live Demo](https://img.shields.io/badge/Demo-WebGPU_Zero_Egress-green.svg)]([https://devxa2602.github.io/AegisRouter/aegisRouter.html])
 
-![Aegis Router T4 Benchmark GIF](assets/t4_benchmark.gif)
+![Aegis Router T4 Benchmark GIF](assets/t4_demo.gif)
 *NVIDIA T4 GPU (ONNX Runtime FP16, BS=1): 5.91 ms p50 | 157.3 req/sec*
 
 ---
@@ -47,6 +47,9 @@ Evaluated on an **NVIDIA T4 GPU** (ONNX Runtime FP16, `batch_size=1`):
 | **Prompt-Injection Guardrail** | **99.07% Acc** (0.9841 F1) |
 | **5-Class Tool Dispatch** | **98.75% Acc** (0.9878 Macro-F1) |
 | **Expected Calibration Error (ECE)** | **0.0572** |
+
+![Aegis Router T4 Throughput Benchmark](assets/t4_benchmark.gif)
+*Reproducible Kaggle T4 run (`N=500`, `BS=1`) — see [`notebooks/aegis_t4_benchmark.ipynb`](notebooks/aegis_t4_benchmark.ipynb)*
 
 ---
 
