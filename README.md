@@ -15,7 +15,7 @@
 
 Run the full ONNX FP16 model **100% inside your browser** via WebGPU/WASM—no signup, no backend, zero API calls:
 
-👉 **[Launch Zero-Egress Browser Demo]([https://devxa2602.github.io/AegisRouter/aegisRouter.html])**
+👉 **[Launch Zero-Egress Browser Demo](https://devxa2602.github.io/AegisRouter/aegisRouter.html)**
 
 *Open Chrome DevTools → Network tab after loading the ~300 MB weights to verify zero network requests leave your machine. Browser WebGPU runs at ~100 ms; T4 server latency is **5.91 ms p50**.*
 
