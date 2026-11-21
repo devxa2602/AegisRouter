@@ -71,4 +71,8 @@ outputs = session.run(None, {
     "input_ids": inputs["input_ids"].astype(np.int64),
     "attention_mask": inputs["attention_mask"].astype(np.int64),
 })
-Roadmap & EnterpriseOpen-Source (Apache 2.0): Aegis Router v1 weights (149M), ONNX FP16 graph, basic FastAPI proxy, and WebGPU demo.Coming in v2 (Aegis 300M): Custom 3:1 Mamba + FlashAttention-2 hybrid backbone for linear $O(N)$ routing and indirect prompt-injection defense across 64K–128K multi-turn agent trajectories.Enterprise Control Plane: Custom LoRA heads for proprietary tool schemas, RBAC, and SOC2 audit logging. Interested in a free in-VPC design partnership? Reach out at akshayrawate@gmail.com.LicenseApache 2.0 — see LICENSE for details.
+```
+### Roadmap & EnterpriseOpen-Source (Apache 2.0): 
+* **Aegis Router v1 weights (149M), ONNX FP16 graph, basic FastAPI proxy, and WebGPU demo**.
+* **Coming in v2 (Aegis 300M)**: Custom 3:1 Mamba + FlashAttention-2 hybrid backbone for linear $O(N)$ routing and indirect prompt-injection defense across 64K–128K multi-turn agent trajectories.
+* **Enterprise Control Plane**: Custom LoRA heads for proprietary tool schemas, RBAC, and SOC2 audit logging. Interested in a free in-VPC design partnership? Reach out at akshayrawate@gmail.com. LicenseApache 2.0 — see LICENSE for details.
